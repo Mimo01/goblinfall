@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output and caches
+dist/
+coverage/
+.eslintcache
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+
+# Claude Code — personal settings, not shared with the team
+.claude/settings.local.json
+CLAUDE.local.md
+
+# IDEs and editors
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.fleet/
+.zed/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

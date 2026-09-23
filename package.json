@@ -1,0 +1,25 @@
+{
+  "name": "goblinfall",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A tiny deterministic terminal auto-battler: defend the base from goblin waves.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "check": "tsx test/run.ts",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run lint && npm run typecheck && npm run check"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "eslint": "^9.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "base": { "hp": 40 },
+  "lane_length": 12,
+  "enemies": {
+    "goblin_grunt": { "name": "Goblin Grunt", "glyph": "g", "hp": 8, "damage": 3, "speed": 1, "range": 1 },
+    "orc_raider": { "name": "Orc Raider", "glyph": "o", "hp": 14, "damage": 5, "speed": 1, "range": 1 },
+    "wolf_rider": { "name": "Wolf Rider", "glyph": "w", "hp": 10, "damage": 4, "speed": 2, "range": 1 },
+    "stone_golem": { "name": "Stone Golem", "glyph": "G", "hp": 30, "damage": 7, "speed": 1, "range": 1 }
+  },
+  "defenders": {
+    "archer_tower": { "name": "Archer Tower", "glyph": "A", "hp": 12, "damage": 4, "range": 4 },
+    "spear_militia": { "name": "Spear Militia", "glyph": "S", "hp": 18, "damage": 3, "range": 1 },
+    "frost_mage": { "name": "Frost Mage", "glyph": "M", "hp": 8, "damage": 5, "range": 3 }
+  },
+  "layout": [
+    { "type": "spear_militia", "position": 5 },
+    { "type": "frost_mage", "position": 4 },
+    { "type": "archer_tower", "position": 3 },
+    { "type": "spear_militia", "position": 2 }
+  ],
+  "waves": [
+    { "turn": 1, "spawns": ["goblin_grunt", "goblin_grunt", "goblin_grunt"] },
+    { "turn": 8, "spawns": ["goblin_grunt", "wolf_rider", "goblin_grunt"] },
+    { "turn": 16, "spawns": ["orc_raider", "wolf_rider", "orc_raider", "goblin_grunt"] },
+    { "turn": 26, "spawns": ["stone_golem", "orc_raider", "goblin_grunt"] }
+  ]
+}
